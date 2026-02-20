@@ -8,12 +8,25 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
-    """Inyecta claims adicionales en el access token."""
+    """
+    Inyecta claims adicionales en el access token.
+
+    NOTA: super().get_token(user) ya incluye los claims por defecto de SimpleJWT:
+      - token_type  ("access")
+      - exp          (expiración)
+      - iat          (issued at)
+      - jti          (JWT ID único)
+      - user_id      (PK del usuario)
+
+    Los claims que se agregan aquí se SUMAN a los anteriores,
+    no los reemplazan.
+    """
 
     @classmethod
     def get_token(cls, user):
         token = super().get_token(user)
 
+        # Claims custom (se agregan a los ya existentes)
         token['email'] = user.email
         token['is_staff'] = user.is_staff
         token['role'] = getattr(user, 'role', 'user')
