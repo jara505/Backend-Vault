@@ -10,7 +10,7 @@ Crear APIs robustas, seguras y eficientes aplicadas al proyecto de tickets. Enfo
 - **Paginación:** `LimitOffsetPagination`, `PageNumberPagination`, `CursorPagination`.
 - **Throttling:** Rate limiting global y por vista, custom throttles.
 - **Permisos Avanzados:** Custom permissions, permisos por acción, object-level permissions.
-- **Error Handling:** Custom exception handler, excepciones de negocio, validation errors.
+- **Error Handling:** ValidationError, excepciones estándar, excepciones personalizadas, custom exception handler.
 
 ## Cómo Usar
 1. Lee las explicaciones en cada subcarpeta.
@@ -19,7 +19,6 @@ Crear APIs robustas, seguras y eficientes aplicadas al proyecto de tickets. Enfo
 4. Integra al código real para practicar.
 
 ## Próximas Subunidades (no incluidas aquí)
-- Acciones custom.
 - Testing APIs.
 
 ## Notas
