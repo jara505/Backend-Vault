@@ -15,7 +15,7 @@ El throttling controla cuántos requests puede hacer un usuario en un período d
 Aplica a toda la API:
 
 ```python
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
@@ -97,7 +97,7 @@ CACHES = {
 ## Ejemplo Configuración Actual del Proyecto
 
 ```python
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': ('rest_framework.throttling.AnonRateThrottle',),
     'DEFAULT_THROTTLE_RATES': {

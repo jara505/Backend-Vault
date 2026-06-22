@@ -158,7 +158,7 @@ def custom_exception_handler_advanced(exc, context):
 # 4. Configuración en settings.py
 # -------------------------------------------------
 """
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 
 REST_FRAMEWORK = {
     # ... otras configuraciones ...
@@ -207,6 +207,6 @@ REST_FRAMEWORK = {
 # -------------------------------------------------
 # Para integrar en el proyecto:
 # -------------------------------------------------
-# 1. Crea src/core/exception_handlers.py con estas funciones
-# 2. En src/core/settings.py, agrega:
+# 1. Crea projects/ticket-system/src/core/exception_handlers.py con estas funciones
+# 2. En projects/ticket-system/src/core/settings.py, agrega:
 #    'EXCEPTION_HANDLER': 'core.exception_handlers.custom_exception_handler',

@@ -38,7 +38,7 @@ class TicketFilter(FilterSet):
 class TicketListViewConFiltroDemo(generics.ListAPIView):
     """
     Demo de django-filter en vista.
-    En producción, reemplaza/extiende src/ticket/views.py -> TicketListView.
+    En producción, reemplaza/extiende projects/ticket-system/src/ticket/views.py -> TicketListView.
     """
 
     # serializer_class = TicketSerializer
@@ -52,9 +52,9 @@ class TicketListViewConFiltroDemo(generics.ListAPIView):
 
 
 # Cómo probar:
-# 1. Agrega 'django_filters' a INSTALLED_APPS en src/core/settings.py.
+# 1. Agrega 'django_filters' a INSTALLED_APPS en projects/ticket-system/src/core/settings.py.
 # 2. Instala: pip install -r requirements/requirements.txt
-# 3. Reemplaza en src/ticket/views.py: class TicketListView(TicketListViewConFiltroDemo):
+# 3. Reemplaza en projects/ticket-system/src/ticket/views.py: class TicketListView(TicketListViewConFiltroDemo):
 # 4. Corre: python src/manage.py runserver
 # 5. GET /api/tickets/?status=open&priority_min=2&title_contains=bug
 #    -> Filtra tickets abiertos, priority >=2, title con "bug".

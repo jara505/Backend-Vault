@@ -9,7 +9,7 @@ Temario personal de DRF. Nivel principiante ya superado. Enfocado en construir A
 ## Nivel 1: DRF Intermedio — Filtrado, Seguridad y Performance
 
 > Objetivo: APIs robustas, seguras y eficientes.
-> Carpeta de apuntes: `learning_units/unidad_1_drf_intermedio/`
+> Carpeta de apuntes: `topics/`
 
 - [x] Querysets dinámicos (`get_queryset()`, filtrado por usuario/contexto)
 - [x] Serializers avanzados (write-only, read-only, validaciones cross-field, SerializerMethodField)

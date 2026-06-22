@@ -13,7 +13,7 @@ from rest_framework.serializers import (
 class TicketSerializerAvanzadoDemo(ModelSerializer):
     """
     Demo de serializers avanzados aplicado a Ticket.
-    En producción, reemplaza/extiende src/ticket/serializers/ticket_serializer.py.
+    En producción, reemplaza/extiende projects/ticket-system/src/ticket/serializers/ticket_serializer.py.
     """
 
     # SerializerMethodField: Campo calculado (ej. username del creador)
@@ -49,7 +49,7 @@ class TicketSerializerAvanzadoDemo(ModelSerializer):
 
 
 # Cómo probar:
-# 1. Agrega a src/ticket/serializers/ticket_serializer.py o crea uno nuevo.
+# 1. Agrega a projects/ticket-system/src/ticket/serializers/ticket_serializer.py o crea uno nuevo.
 # 2. Usa en views: serializer_class = TicketSerializerAvanzadoDemo
 # 3. POST a /api/tickets/create/: description aparece en request, pero no en respuesta (write_only).
 # 4. GET: creator_username calculado aparece (read_only).

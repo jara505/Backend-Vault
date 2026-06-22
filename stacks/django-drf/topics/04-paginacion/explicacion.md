@@ -101,14 +101,14 @@ REST_FRAMEWORK = {
 ## Ejemplo Integrdo al Proyecto
 
 ```python
-# src/ticket/pagination/pagination.py
+# projects/ticket-system/src/ticket/pagination/pagination.py
 from rest_framework.pagination import LimitOffsetPagination
 
 class TicketPagination(LimitOffsetPagination):
     default_limit = 10
     max_limit = 20
 
-# src/ticket/views.py
+# projects/ticket-system/src/ticket/views.py
 from .pagination.pagination import TicketPagination
 
 class TicketListView(generics.ListAPIView):

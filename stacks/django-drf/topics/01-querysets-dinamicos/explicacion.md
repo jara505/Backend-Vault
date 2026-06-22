@@ -12,7 +12,7 @@ En DRF, `get_queryset()` es un método en vistas genéricas (como `ListAPIView`)
 Ver `ejemplo_get_queryset.py` para código.
 
 ### Cómo integrarlo al proyecto:
-1. En `src/ticket/views.py`, modifica `TicketListView`:
+1. En `projects/ticket-system/src/ticket/views.py`, modifica `TicketListView`:
    ```python
    def get_queryset(self):
        return Ticket.objects.filter(created_by=self.request.user)

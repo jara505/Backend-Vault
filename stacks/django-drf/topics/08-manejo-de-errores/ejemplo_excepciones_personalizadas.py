@@ -118,6 +118,6 @@ class TicketNotEditableException(APIException):
 # -------------------------------------------------
 # Para integrar en el proyecto:
 # -------------------------------------------------
-# 1. Crea src/ticket/exceptions.py con estas clases
+# 1. Crea projects/ticket-system/src/ticket/exceptions.py con estas clases
 # 2. Impórtalas en serializers y views donde necesites
 # 3. úsalas con raise TicketClosedException(), etc.

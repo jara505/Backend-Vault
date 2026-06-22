@@ -10,7 +10,7 @@ from rest_framework.permissions import IsAuthenticated
 class TicketListViewConSearchOrderingDemo(generics.ListAPIView):
     """
     Demo de SearchFilter y OrderingFilter en vista.
-    En producción, reemplaza/extiende src/ticket/views.py -> TicketListView.
+    En producción, reemplaza/extiende projects/ticket-system/src/ticket/views.py -> TicketListView.
     """
     # serializer_class = TicketSerializer
     permission_classes = [IsAuthenticated]
@@ -25,7 +25,7 @@ class TicketListViewConSearchOrderingDemo(generics.ListAPIView):
 
 # Cómo probar:
 # 1. Ya incluido en DRF; no necesita instalar.
-# 2. Reemplaza en src/ticket/views.py: class TicketListView(TicketListViewConSearchOrderingDemo):
+# 2. Reemplaza en projects/ticket-system/src/ticket/views.py: class TicketListView(TicketListViewConSearchOrderingDemo):
 # 3. Corre: python src/manage.py runserver
 # 4. GET /api/tickets/?search=bug&ordering=-priority
 #    -> Busca "bug" en title/description, ordena por priority descendente.

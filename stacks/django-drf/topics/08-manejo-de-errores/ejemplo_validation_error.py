@@ -61,4 +61,4 @@ class TicketSerializer(ModelSerializer):
 # -------------------------------------------------
 # Para integrar en el proyecto:
 # -------------------------------------------------
-# Copia estos métodos a src/ticket/serializers/ticket_serializer.py
+# Copia estos métodos a projects/ticket-system/src/ticket/serializers/ticket_serializer.py

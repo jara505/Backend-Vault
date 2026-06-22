@@ -112,7 +112,7 @@ def custom_exception_handler(exc, context):
 ## Cómo integrarlo al proyecto:
 
 ### 1. ValidationError
-En `src/ticket/serializers/ticket_serializer.py`, agrega validaciones:
+En `projects/ticket-system/src/ticket/serializers/ticket_serializer.py`, agrega validaciones:
 
 ```python
 def validate(self, attrs):
@@ -122,7 +122,7 @@ def validate(self, attrs):
 ```
 
 ### 2. Excepciones Estándar
-En `src/ticket/views.py`, usa las excepciones donde necesites:
+En `projects/ticket-system/src/ticket/views.py`, usa las excepciones donde necesites:
 
 ```python
 from rest_framework.exceptions import NotFound, PermissionDenied
@@ -135,10 +135,10 @@ def get_object(self, pk):
 ```
 
 ### 3. Excepciones Personalizadas
-Crea `src/ticket/exceptions.py` y úsalas en views/serializers.
+Crea `projects/ticket-system/src/ticket/exceptions.py` y úsalas en views/serializers.
 
 ### 4. Custom Exception Handler
-En `src/core/settings.py`, agrega:
+En `projects/ticket-system/src/core/settings.py`, agrega:
 
 ```python
 REST_FRAMEWORK = {

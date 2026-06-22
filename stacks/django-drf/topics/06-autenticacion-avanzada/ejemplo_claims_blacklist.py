@@ -91,7 +91,7 @@ urlpatterns = [
 # 5. Settings relevantes
 # -------------------------------------------------#
 """
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 
 INSTALLED_APPS = [
     ...

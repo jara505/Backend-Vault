@@ -11,7 +11,7 @@ from rest_framework.permissions import IsAuthenticated
 class TicketListViewDemo(generics.ListAPIView):
     """
     Demo de get_queryset() para filtrar tickets por usuario autenticado.
-    En producción, reemplaza esto en src/ticket/views.py -> TicketListView.
+    En producción, reemplaza esto en projects/ticket-system/src/ticket/views.py -> TicketListView.
     """
 
     serializer_class = TicketSerializer
@@ -29,7 +29,7 @@ class TicketListViewDemo(generics.ListAPIView):
 
 
 # Cómo probar:
-# 1. Reemplaza en src/ticket/views.py: class TicketListView(TicketListViewDemo):
+# 1. Reemplaza en projects/ticket-system/src/ticket/views.py: class TicketListView(TicketListViewDemo):
 # 2. Corre: python src/manage.py runserver
 # 3. Haz GET a /api/tickets/ con auth (JWT). Solo verás tus tickets.
 # 4. Para más contexto: Agrega query params, ej. ?status=open para filtrar extra.

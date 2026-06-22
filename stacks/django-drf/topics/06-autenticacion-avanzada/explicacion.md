@@ -7,7 +7,7 @@ Los claims son los datos que viajan dentro del payload del JWT. Por defecto Simp
 ### Configuración en settings.py
 
 ```python
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
@@ -87,7 +87,7 @@ El problema: los JWT son stateless, una vez emitidos no se pueden "invalidar" ha
 ### Instalación
 
 ```python
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 INSTALLED_APPS = [
     # ...
     'rest_framework_simplejwt.token_blacklist',  # Agrega la app
@@ -102,7 +102,7 @@ python manage.py migrate
 ### Configuración en settings.py
 
 ```python
-# src/core/settings.py
+# projects/ticket-system/src/core/settings.py
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7),

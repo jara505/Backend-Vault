@@ -118,5 +118,5 @@ class TicketSearchView(APIView):
 # -------------------------------------------------
 # Para integrar en el proyecto:
 # -------------------------------------------------
-# Copia las excepciones a src/ticket/views.py donde necesites
+# Copia las excepciones a projects/ticket-system/src/ticket/views.py donde necesites
 # validar objetos, permisos, etc.

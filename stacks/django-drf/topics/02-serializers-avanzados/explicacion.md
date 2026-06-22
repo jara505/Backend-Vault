@@ -15,7 +15,7 @@ Técnicas para controlar campos en serializers DRF:
 Ver `ejemplo_serializer_avanzado.py` para código.
 
 ### Cómo integrarlo al proyecto:
-1. En `src/ticket/serializers/ticket_serializer.py`, agrega:
+1. En `projects/ticket-system/src/ticket/serializers/ticket_serializer.py`, agrega:
    ```python
    extra_kwargs = {'description': {'write_only': True}}
    read_only_fields = ['id', 'created_at']
